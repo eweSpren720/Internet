@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tareas</title>
+	<style>
+		.container {
+			margin: 0%;
+		}
+		.section {
+			display: inline-block;
+			width: 45%;
+			vertical-align: top;
+		}
+		.title {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		.task {
+			margin-bottom: 10px;
+			display: flex;
+			align-items: center;
+		}
+		.completed {
+			text-decoration: line-through;
+		}
+		.button {
+			background-color: blue;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			padding: 5px 10px;
+			cursor: pointer;
+		}
+		.gray-button-container {
+			margin-left: 250px;
+		}
+		.gray-button {
+			background-color: gray;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			padding: 5px 10px;
+			cursor: pointer;
+			margin-right: 10px;
+		}
+		.input-text {
+			font-size: 18px;
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Agregar tarea</h1>
+		<div>
+			<input type="text" class="input-text" placeholder="Ingrese una tarea">
+			<button class="button">Agregar</button>
+		</div>
+		<div class="section">
+			<h2 class="title">En proceso</h2>
+			<div class="task">
+				<input type="checkbox">
+				<span>Beber 2l de agua</span>
+				<div class="gray-button-container">
+					<button class="gray-button">Editar</button>
+					<button class="gray-button">Eliminar</button>                
+			</div>
+			<div class="task">
+				<input type="checkbox">
+				<span>Mandar documentos beca</span>
+				<div class="gray-button-container">
+					<button class="gray-button">Editar</button>
+					<button class="gray-button">Eliminar</button>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<h2 class="title">Completado</h2>
+			<div class="task">
+				<input type="checkbox" checked>
+				<span class="completed">Pagar Netflix</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
