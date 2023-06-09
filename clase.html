@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="clase.css">
+	<script src="clase.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,300&family=Poltawski+Nowy:ital@1&display=swap" rel="stylesheet">
@@ -14,26 +15,25 @@
 	<div class="container">
 		<h1>Agregar tarea</h1>
 		<div>
-			<input type="text" class="input-text" placeholder="Ingrese una tarea">
-			<button class="button">Agregar</button>
+			<input type="text" class="input-text" placeholder="Ingrese una tarea" id="newTaskInput">
+			<button class="button" onclick="addTask()">Agregar</button>
 		</div>
 		<div class="section">
 			<h2 class="title">En proceso</h2>
-			<div class="task">
-                
-				<input type="checkbox">
+			<div class="task" id="task1">
+				<input type="checkbox" id="checkbox1">
 				<span>Beber 2l de agua</span>
 				<div class="gray-button-container">
-					<button class="gray-button">Editar</button>
-					<button class="gray-button">Eliminar</button>
+					<button class="gray-button" onclick="editTask('task1')">Editar</button>
+					<button class="gray-button" onclick="deleteTask('task1')">Eliminar</button>
 				</div>
 			</div>
-			<div class="task">
-				<input type="checkbox">
+			<div class="task" id="task2">
+				<input type="checkbox" id="checkbox2">
 				<span>Mandar documentos beca</span>
 				<div class="gray-button-container">
-					<button class="gray-button">Editar</button>
-					<button class="gray-button">Eliminar</button>
+					<button class="gray-button" onclick="editTask('task2')">Editar</button>
+					<button class="gray-button" onclick="deleteTask('task2')">Eliminar</button>
 				</div>
 			</div>
 		</div>
